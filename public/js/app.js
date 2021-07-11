@@ -19,7 +19,8 @@ weatherform.addEventListener('submit', (e) => {
             } else {
                 console.log(data)
                 message1.textContent = data.location
-                message2.textContent = data.forecast.current + ' and it feels like ' + data.forecast.feelslike
+                message2.textContent = data.forecast.description + '. The current temperature is ' +
+                data.forecast.temperature + ' degree celcious, and it feels like ' + data.forecast.feelslike
             }
         })
     })
